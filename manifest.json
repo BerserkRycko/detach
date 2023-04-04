@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Detach",
+  "version": "1.0",
+  "description": "Agrega un botón en los videos de youtube para agregarlos a una ventana flotante y puedas navegar en otras páginas mientras disfrutas tus videos favoritas",
+  "icons": {
+    "16": "icono16.png",
+    "48": "icono48.png",
+    "128": "icono128.png"
+  },
+  "permissions": [
+    "activeTab",
+    "storage",
+    "https://www.youtube.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "browser_action": {
+    "default_icon": "icono.png",
+    "default_popup": "popup.html"
+  },
+  "options_page": "opciones.html"
+}
